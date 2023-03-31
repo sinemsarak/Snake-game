@@ -99,7 +99,7 @@ int main ()
         scanf( " %c", &yon);
         switch(yon)
         {
-		 case  'U': //yukari
+		 case  'W': //yukari
             if(m!=u)
             {
             	yilan[2][u]=m;
@@ -112,7 +112,7 @@ int main ()
             }
             yilan[0][0]=yilan[0][0]-1; //yilanýn baþýnýn yeni konumu (sadece i deðeri deðiþir, j yi ellemedim o yüzden)
            break;
-        case 'D': //asagý
+        case 'S': //asagý
             if(m!=u)
             {
             	yilan[2][u]=m;
@@ -125,7 +125,7 @@ int main ()
             }
             yilan[0][0]=yilan[0][0]+1; //yilanýn baþýnýn yeni konumu (iadece i deðeri deðiþir, j yi ellemedim o yüzden)
            break;
-        case 'R'://sag
+        case 'D'://sag
             if(m!=u)
             {
             	yilan[2][u]=m;
@@ -138,7 +138,7 @@ int main ()
             }
             yilan[1][0]=yilan[1][0]+1; //yilanýn baþýnýn yeni konumu (iadece i deðeri deðiþir, j yi ellemedim o yüzden)
             break;
-        case 'L'://sol
+        case 'A'://sol
             if(m!=u)
             {
             	yilan[2][u]=m;
