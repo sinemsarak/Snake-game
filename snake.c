@@ -125,7 +125,7 @@ int main ()
             }
             yilan[0][0]=yilan[0][0]+1; //yilanýn baþýnýn yeni konumu (iadece i deðeri deðiþir, j yi ellemedim o yüzden)
            break;
-        case 'D'://sag
+        case 'A'://sag
             if(m!=u)
             {
             	yilan[2][u]=m;
@@ -138,7 +138,7 @@ int main ()
             }
             yilan[1][0]=yilan[1][0]+1; //yilanýn baþýnýn yeni konumu (iadece i deðeri deðiþir, j yi ellemedim o yüzden)
             break;
-        case 'A'://sol
+        case 'D'://sol
             if(m!=u)
             {
             	yilan[2][u]=m;
@@ -176,11 +176,13 @@ int main ()
                 yem=yem-200;
             }
         }
+        system("cls");
+        printf("\n\n\n\n\n");
         if(yem<0)//bu if her hamle sonrasi tahtayi yazdýrmaktadýr, içerisindeki if ise oyunun bitip bitmediðini kontrol etmekte ve ona göre yýlaný yok etmektedir, açýklama yaparken if i dýþarý koyma sebebbinin her döngüde kýyas yapmamak adýna olduðunu söyle
         {
             for (i=0; i<en+2; i++)
             {
-            	printf("\t\t\t\t\t");
+            	printf("\t\t\t\t\t\t\t");
                 for (j=0; j<boy+2; j++)
                 {
                     if (32 >alan[i][j])
@@ -203,7 +205,7 @@ int main ()
         {
             for (i=0; i<en+2; i++)
             {
-            	printf("\t\t\t\t\t");
+            	printf("\t\t\t\t\t\t\t");
                 for (j=0; j<boy+2; j++)
                 {
                     if (32 >alan[i][j])
